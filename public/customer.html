@@ -1,53 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Customer</title>
-     <!------------------------------------------------------------------------------------------------------
+
+<head>
+  <title>Customer</title>
+  <!------------------------------------------------------------------------------------------------------
      -- order matters always add jquery file above of javascript file
      ------------------------------------------------------------------------------------------------------->
-      
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/customer.js"></script>
-    <style>
-      div {
-        padding: 20px 50px;
-      }
-      button, label{
-        margin: 5px;
-        font-size: 20px;
-      }
-      th{
-        font-size: 18px;
-        font-family: 'Franklin Gothic Medium';
-        font-weight: 300;
-        color: darkslateblue;
-        border: 2px solid red;
-      }
-      table, td{
-        border: 2px solid green;
-        color: chocolate;
-        padding: 5px 15px;
-        border-collapse: collapse;
-      }
-    </style>
-  </head>
-  <body>
-    <center><h1>Customer CRUD Operations</h1></center>
-    <div>
-      <button id="create">Add New Customer</button>
-      <br />
-      <button id="showCustomers">Show All Customers</button>
-      <br />
-      <button id="delete">Delete Customer</button>
-      <br />
-      <hr />
-      <label>Customer Id</label>
-      <input type="number" id="customerid" name="customerid" required />
-      <button id="update">Update Customer</button>
-      <hr>
-      <table id="show">
 
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/customer.js"></script>
+  <style>
+    div {
+      padding: 20px 50px;
+    }
+
+    button,
+    label {
+      margin: 5px;
+      font-size: 16px;
+    }
+
+    th {
+      font-size: 18px;
+      font-family: 'Franklin Gothic Medium';
+      font-weight: 300;
+      color: darkslateblue;
+      border: 2px solid red;
+    }
+
+    table,
+    td {
+      border: 2px solid green;
+      color: chocolate;
+      padding: 5px 15px;
+      border-collapse: collapse;
+    }
+    h2{
+      background-color:antiquewhite;
+      color: blue;
+    }
+
+    label {
+      width: 80%;
+      display: flex;
+    }
+
+    input {
+      width: 30%;
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>Customer CRUD Operations</h1>
+  </center>
+  <div>
+    <div>
+      <h2>Add Customer</h2>
+      <label>ID</label>
+      <input type="number" id="userid" required>
+
+      <label>First Name</label>
+      <input type="text" id="fname" required>
+
+      <label>Last Name</label>
+      <input type="text" id="lname" required>
+
+      <label>email</label>
+      <input type="email" id="email" required>
+
+      <label>Contact</label>
+      <input type="text" id="contact" required>
+
+      <button id="create">Add Customer</button>
+    </div>
+
+    <hr>
+    <div>
+      <h2>Show All Customers</h2>
+      <button id="showCustomers">Show All Customers</button>
+      <table id="show">
       </table>
     </div>
-  </body>
+    <hr>
+    <br />
+    <div>
+      <h2>Update Customer</h2>
+      <label>ID</label>
+      <input type="number" id="userid1" required>
+
+      <label>First Name</label>
+      <input type="text" id="fname1" required>
+
+      <label>Last Name</label>
+      <input type="text" id="lname1" required>
+
+      <labe>email</label>
+        <input type="email" id="email1" required>
+
+        <label>Contact</label>
+        <input type="text" id="contact1" required>
+
+        <button id="update">Update Customer</button>
+    </div>
+    <hr />
+    <div>
+
+      <h2>Update Customer</h2>
+      <label>Customer Id</label>
+      <input type="number" id="customerid" name="customerid" required />
+      <button id="delete">Delete Customer</button>
+    </div>
+    <hr>
+
+  </div>
+</body>
+
 </html>
