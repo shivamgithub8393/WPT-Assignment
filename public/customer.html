@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer</title>
+     <!------------------------------------------------------------------------------------------------------
+     -- order matters always add jquery file above of javascript file
+     ------------------------------------------------------------------------------------------------------->
+      
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/customer.js"></script>
+    <style>
+      div {
+        padding: 20px 50px;
+      }
+      button, label{
+        margin: 5px;
+        font-size: 20px;
+      }
+      th{
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium';
+        font-weight: 300;
+        color: darkslateblue;
+        border: 2px solid red;
+      }
+      table, td{
+        border: 2px solid green;
+        color: chocolate;
+        padding: 5px 15px;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <center><h1>Customer CRUD Operations</h1></center>
+    <div>
+      <button id="create">Add New Customer</button>
+      <br />
+      <button id="showCustomers">Show All Customers</button>
+      <br />
+      <button id="delete">Delete Customer</button>
+      <br />
+      <hr />
+      <label>Customer Id</label>
+      <input type="number" id="customerid" name="customerid" required />
+      <button id="update">Update Customer</button>
+      <hr>
+      <table id="show">
+
+      </table>
+    </div>
+  </body>
+</html>
